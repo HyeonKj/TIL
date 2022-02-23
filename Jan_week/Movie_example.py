@@ -1,3 +1,6 @@
+
+"""저장 데이터 CLASS 사용 영화 프로젝트"""
+
 class Movie:
 	def __init__(self, name, teen_price, adult_price):
 		self.name = name
