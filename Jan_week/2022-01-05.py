@@ -1,4 +1,6 @@
 """
+2022 - 01 - 05 ~ 1월 첫번째 주 파이썬 기초 
+
 def add(a,b):
     return a+b
 result = add(a=3, b=7)
