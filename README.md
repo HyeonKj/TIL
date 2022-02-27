@@ -22,7 +22,7 @@
 
 ------------
 
-### 오늘의 명언
+### 동기부여 멘트 feat. 내가 좋아하는
 
 + 하루에 3시간을 걷다보면 7년 후에는 지구를 한 바퀴 돌 수 있다.
 + 아침에 눈을 떠서 어제보다 나은 하루를 만들지 않으면 실패한 것이다. 
@@ -31,6 +31,7 @@
 + A good friend can tell you what is the matter with you in a minute. He may not seem such a good friend after telling.
 + Procrastination is the thief of time.
 + “Done is better than perfect.”
++ 
 
 
 
