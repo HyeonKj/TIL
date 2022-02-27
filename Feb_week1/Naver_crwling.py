@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 @author: HyeonKJ
+네이버 DBMS 주식 데이터 불러오기
+
 """
 import pandas as pd
 from bs4 import BeautifulSoup
@@ -69,7 +71,7 @@ class DBUpdater:
             
             
        #self.read_krx_code
-    '''
+    
     #네이버 데이터 크롤링
     def read_naver(self,code, company, pages_to_fetch):
         pass
@@ -85,7 +87,7 @@ class DBUpdater:
     def execute_daily(self):
         self.update_comp_info()
         self.update_daily_price
-        '''
+    
 if __name__ == '__main__':
     dbu = DBUpdater()
     dbu.read_krx_code()

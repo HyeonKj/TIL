@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-
+mission_클래스로 진행하기
 @author: HyeonKJ
 """
 
