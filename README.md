@@ -31,7 +31,9 @@
 + A good friend can tell you what is the matter with you in a minute. He may not seem such a good friend after telling.
 + Procrastination is the thief of time.
 + “Done is better than perfect.”
-+ 
++ 20년 후 했던 일보다, 하지 않았던 일로 인해 더 실망할 것이다.
++ 우리가 실패에서 배우면 실패는 성공이 된다. 
+
 
 
 
