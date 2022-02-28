@@ -26,13 +26,16 @@
 
 + 하루에 3시간을 걷다보면 7년 후에는 지구를 한 바퀴 돌 수 있다.
 + 아침에 눈을 떠서 어제보다 나은 하루를 만들지 않으면 실패한 것이다. 
++ 20년 후 했던 일보다, 하지 않았던 일로 인해 더 실망할 것이다.
++ 우리가 실패에서 배우면 실패는 성공이 된다. 
+
+
 + Tough times never last, but tough people do.
 + I’ve failed **over and over and over again** in my life and that is why I succeed.
 + A good friend can tell you what is the matter with you in a minute. He may not seem such a good friend after telling.
 + Procrastination is the thief of time.
 + “Done is better than perfect.”
-+ 20년 후 했던 일보다, 하지 않았던 일로 인해 더 실망할 것이다.
-+ 우리가 실패에서 배우면 실패는 성공이 된다. 
+
 
 
 
