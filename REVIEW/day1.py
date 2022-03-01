@@ -20,3 +20,13 @@ print(a.append(4))
 print(a)
 a.append([3,2,1])
 print(a)
+
+a= [1,2,3]
+a.index(3)
+# 2
+# a.index(1)
+# 0 
+a.reverse()
+
+a
+
