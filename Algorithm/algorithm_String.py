@@ -27,6 +27,15 @@ for i in range(t):
     n=int(n)
     print(word[:n-1]+word[n:]) """
 
-#태보태보 총난타 no.17248
+""" #태보태보 총난타 no.17248
 l, r=input().split("(^0^)")
-print(l.count('@'),r.count("@"))
+print(l.count('@'),r.count("@")) """
+
+# no.2789 유학금지
+data = ['C', 'A', 'M', 'B', 'R', 'I', 'D', 'G', 'E']
+
+value = input()
+for i in range(len(value)) :
+  if value[i] not in data :
+    print(value[i], end='')
+
