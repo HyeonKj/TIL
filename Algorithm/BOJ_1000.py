@@ -70,13 +70,34 @@ for i in range(T):
 T = int(input())
 for i in range(T):
     A, B = map(int,input().split())
-    print("Case #{}: {}".format(i+1, A+B)) """
+    print("Case #{}: {}".format(i+1, A+B)) 
+    
+    F-string은 가장 많이 쓰이고 가장 빠름. (권장)
 
-#6. no.11022 BOJ
+t = int(input())
+
+for i in range(t):
+    a, b = map(int, input().split())
+    print(f"Case #{i + 1}: {a + b}")
+    """
+
+""" #6. no.11022 BOJ
 T = int(input())
 
 for i in range(1, T+1):
     A, B = map(int, input().split())
-    print(f"Case #{i}: {A} + {B} = {A+B}")
+    print(f"Case #{i}: {A} + {B} = {A+B}") """
 
-#7. no.
+#7. no.2438 BOJ
+
+num = int(input())
+for i in range(num, num+1):
+    i = i * '*'
+    print(f"{i}")
+
+a=int(input())
+for i in range(1,a+1):
+    print("*"*i)
+
+
+    
