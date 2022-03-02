@@ -117,4 +117,10 @@ else:
         else:
             print(' *' * N)
 
+n = int(input())
 
+line = "* "*n 
+
+for i in range(n):
+    print(line)
+    line = n[::-1]

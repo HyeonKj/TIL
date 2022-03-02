@@ -1,4 +1,4 @@
-# 문자열은 변경 불가능한 자료형이다.
+""" # 문자열은 변경 불가능한 자료형이다.
 word = "aplle"
 
 word+= " banana"
@@ -15,3 +15,18 @@ print(s[::-1]) #전체를 반대 방향으로 인출
 #10988 BOJ 팰린드롬인지 확인하기 
 word = input()
 print(1 if word==word[::-1] else 0)
+
+w = input()
+n = 0 """
+
+""" #오타맨 고창영 no.2711
+t=int(input())
+
+for i in range(t):
+    n, word = input().split()
+    n=int(n)
+    print(word[:n-1]+word[n:]) """
+
+#태보태보 총난타 no.17248
+l, r=input().split("(^0^)")
+print(l.count('@'),r.count("@"))
