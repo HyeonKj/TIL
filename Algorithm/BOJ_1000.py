@@ -99,7 +99,22 @@ x=int(input())
 for i in range(1,x+1):
     print("*"*i) """
 
-#8. no.2439 
+""" #8. no.2439 
 x=int(input())
 for i in range(1,x+1):
-    print(' '*(x-i)+"*"*i)
+    print(' '*(x-i)+"*"*i) """
+
+# 실습. no.10995 별찍기 -20 
+N = int(input())
+
+if N == 1:
+    print('*')
+    
+else:
+    for i in range(N):
+        if i % 2 == 0:
+            print('* ' * N)
+        else:
+            print(' *' * N)
+
+
