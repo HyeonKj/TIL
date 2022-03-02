@@ -88,16 +88,18 @@ for i in range(1, T+1):
     A, B = map(int, input().split())
     print(f"Case #{i}: {A} + {B} = {A+B}") """
 
-#7. no.2438 BOJ
+""" #7. no.2438 BOJ
 
 num = int(input())
 for i in range(num, num+1):
     i = i * '*'
     print(f"{i}")
 
-a=int(input())
-for i in range(1,a+1):
-    print("*"*i)
+x=int(input())
+for i in range(1,x+1):
+    print("*"*i) """
 
-
-    
+#8. no.2439 
+x=int(input())
+for i in range(1,x+1):
+    print(' '*(x-i)+"*"*i)
