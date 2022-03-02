@@ -44,8 +44,37 @@ print(a, b, c, d, e, end="!")
 a, b =map(int, input().split())
 print(a+b) """
 
-#2. BOJ 2558번
+""" #2. no.2558 BOJ
 A=int(input())
 B=int(input())
 print(A+B)
+ """
 
+""" #3. no.10950 BOJ
+test = int(input()) 
+
+for i in range(test): 
+    a,b = map(int,input().split())
+    print(a+b) """
+
+
+""" #4. no.10953 BOJ
+T = int(input())
+
+for i in range(T):
+    A, B=map(int, input().split(','))
+    print(A+B) """
+
+
+""" #5. no.11021 BOJ
+T = int(input())
+for i in range(T):
+    A, B = map(int,input().split())
+    print("Case #{}: {}".format(i+1, A+B)) """
+
+#5. no.11022 BOJ
+T = int(input())
+
+for i in range(T):
+    A, B = map(int, input().split())
+    print("Case #{}:A + B =(A+B) {}".format(i+1))
