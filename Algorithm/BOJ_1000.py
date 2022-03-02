@@ -72,9 +72,11 @@ for i in range(T):
     A, B = map(int,input().split())
     print("Case #{}: {}".format(i+1, A+B)) """
 
-#5. no.11022 BOJ
+#6. no.11022 BOJ
 T = int(input())
 
-for i in range(T):
+for i in range(1, T+1):
     A, B = map(int, input().split())
-    print("Case #{}:A + B =(A+B) {}".format(i+1))
+    print(f"Case #{i}: {A} + {B} = {A+B}")
+
+#7. no.
