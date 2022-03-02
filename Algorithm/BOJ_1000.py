@@ -39,6 +39,13 @@ print(a, b, c, d, e)
 print(a, b, c, d, e, sep="&")
 print(a, b, c, d, e, end="!")
  """
-#1. 
+
+""" #1. BOJ 1000번
 a, b =map(int, input().split())
-print(a+b)
+print(a+b) """
+
+#2. BOJ 2558번
+A=int(input())
+B=int(input())
+print(A+B)
+
