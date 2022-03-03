@@ -50,11 +50,29 @@ print(["No."+str(i) for i in range(1, n+1)]) """
 
 # LIST Comprehension1 
 
-n = int(input())
+""" n = int(input())
 numbers = [i * i for i in range(1, n + 1)]
 print(numbers)
 
 # LIST Comprehension2 
 n = int(input())
 numbers = [f"No.{i}" for i in range(1, n + 1)]
-print(numbers)
+print(numbers) """
+
+""" # 가독성과 재사용성이 중요하다
+# 최댓값 
+# 1. 입력을 받아서 리스트를 만든다. 
+num = [int(input()) for i in range(9)]
+max_num = max(num)
+# 2. 최댓값
+print(max_num)
+
+# 3. 몇 번째 수인가?
+print(num.index(max_num)+1) """
+
+#2차원 리스트
+a =[list(map(int, input().split())) for i in range(3)]
+# for i in range(3):
+#     line = list(map(int, input().split()))
+
+print(a)
