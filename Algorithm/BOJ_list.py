@@ -97,15 +97,15 @@ print(a) """
 #         print(n[i][j]*m[i][j], end=" ")
 #     print()
 
-# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+""" # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 first= [map(int, input().split()) for i in range(2)]
 
 second = [map(int, input().split()) for i in range(2)]
 
 for k in range(2):
-    print(*[i * j for i, j in zip(first[k], second[k])])
+    print(*[i * j for i, j in zip(first[k], second[k])]) """
 
-# 1100번 하얀 칸 
+""" # 1100번 하얀 칸 
 
 chess = [input() for _ in range(8)]
 cnt = 0
@@ -125,4 +125,13 @@ for i in range(2):
     for j in range(4):
         number = list_a[i][j] * list_b[i][j]
         print(number, end=" ")
+    print() """
+
+# same code 
+list_a = [list(map(int, input().split())) for i in range(2)]
+list_b = [list(map(int, input().split())) for i in range(2)]
+
+for i in range(2):
+    for j in range(4):
+        print(list_a[i][j] * list_b[i][j], end=" ")
     print()
