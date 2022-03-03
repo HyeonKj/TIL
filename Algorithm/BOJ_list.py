@@ -71,8 +71,58 @@ print(max_num)
 print(num.index(max_num)+1) """
 
 #2차원 리스트
-a =[list(map(int, input().split())) for i in range(3)]
+# a =[list(map(int, input().split())) for i in range(3)]
 # for i in range(3):
 #     line = list(map(int, input().split()))
+# ############################################
+""" #추가 설명 ########################
+n, m = map(int, input().split())
+a = [list(map(int, input().split())) for i in range(n)]
 
-print(a)
+total = 0
+for i in range(n):
+    for j in range(m):
+        total += a[i][j]
+
+print(total)
+
+print(a) """
+
+# 리스트 3 자가진단 6
+# n = [list(map(int, input().split())) for i in range(2)]
+# m = [list(map(int, input().split())) for i in range(2)]
+
+# for i in range(2):
+#     for j in range(4):
+#         print(n[i][j]*m[i][j], end=" ")
+#     print()
+
+# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+first= [map(int, input().split()) for i in range(2)]
+
+second = [map(int, input().split()) for i in range(2)]
+
+for k in range(2):
+    print(*[i * j for i, j in zip(first[k], second[k])])
+
+# 1100번 하얀 칸 
+
+chess = [input() for _ in range(8)]
+cnt = 0
+
+for y in range(8):
+    for x in range(8):
+        if y%2 == x%2 and chess[y][x] == 'F':
+            cnt += 1
+
+print(cnt)
+
+# @@@@@@@@@@@ ather ways
+list_a = [list(map(int, input().split())) for i in range(2)]
+list_b = [list(map(int, input().split())) for i in range(2)] 
+ 
+for i in range(2):
+    for j in range(4):
+        number = list_a[i][j] * list_b[i][j]
+        print(number, end=" ")
+    print()
