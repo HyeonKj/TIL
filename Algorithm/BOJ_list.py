@@ -48,7 +48,10 @@ print(["No."+str(i) for i in range(1, n+1)]) """
 # print(max(numbers))
 # print(numbers.index(max(numbers)) + 1)
 
-numbers = [int(input()) for _ in range(9)]
+# LIST Comprehension1 
 
-print(max(numbers))
-print(numbers.index(max(numbers)) + 1)
+n = int(input())
+numbers = [i * i for i in range(1, n + 1)]
+print(numbers)
+
+# LIST Comprehension2 
