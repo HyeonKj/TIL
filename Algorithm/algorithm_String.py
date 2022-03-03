@@ -31,11 +31,19 @@ for i in range(t):
 l, r=input().split("(^0^)")
 print(l.count('@'),r.count("@")) """
 
-# no.2789 유학금지
+""" # no.2789 유학금지
 data = ['C', 'A', 'M', 'B', 'R', 'I', 'D', 'G', 'E']
 
 value = input()
 for i in range(len(value)) :
   if value[i] not in data :
-    print(value[i], end='')
+    print(value[i], end='') """
 
+#no.2789 replace 사용
+
+word = input()
+
+for i in ['C', 'A', 'M', 'B', 'R', 'I', 'D', 'G', 'E']:
+  word = word.replace(i, "")
+
+print(word)
