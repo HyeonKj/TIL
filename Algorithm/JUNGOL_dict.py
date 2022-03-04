@@ -14,6 +14,15 @@ word = input()
 print(animations.get(word, "I don't know")) """
 
 # 딕셔너리 기본 문제 2
+# n = int(input())
+# countries = {}
+
+# for i in range(n):
+#     country, city = input().split()
+#     countries[country] = city
+
+# print(countries.get(input(), "Unknown Country"))
+
 # num = int(input())
 # nat_cap = {}
 
@@ -36,16 +45,26 @@ print(animations.get(word, "I don't know")) """
 # country = input()
 # print(dict.get(country, "Unknown Country"))
 
-# dictionary 
-foul = list(input().split())
-dic = {}
+# dictionary 3번 파울 횟수 
+# 딕셔너리 만들기
+players = input().split()
+fouls = {}
 
-for name in set(foul):
-    dic[name] = foul.count(name)
+for player in players:
+    # 1)이미 선수가 있어요?
+    if player in fouls:
+        fouls[player] +=1
+    #2) 선수가 없어요?
+    else:
+        fouls[player] = 1
 
-min_foul = min(dic.values())
+# 2. 최소 파울 갯수 찾기 
+min_foul = min(fouls.values())
 
-for name in dic:
-    if dic[name] == min_foul:
-        print(name)
+# 3. 가장 파울 적게 한 선수 출력
+for player, foul in fouls.items():
+    if fouls== min_foul:
+        print(player)
+
+# 4. 최소 파울 갯수 
 print(min_foul)
