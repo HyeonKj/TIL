@@ -47,7 +47,7 @@ print(animations.get(word, "I don't know")) """
 
 # dictionary 3번 파울 횟수 
 # 딕셔너리 만들기
-players = input().split()
+""" players = input().split()
 fouls = {}
 
 for player in players:
@@ -67,4 +67,4 @@ for player, foul in fouls.items():
         print(player)
 
 # 4. 최소 파울 갯수 
-print(min_foul)
+print(min_foul) """
