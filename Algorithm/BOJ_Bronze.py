@@ -34,11 +34,16 @@ for i in range(2):
     print() """
 
 
-# no.1100 하얀 칸 
+""" # no.1100 하얀 칸 
 ans=0
 for i in range(8):
      ans+=input()[i%2::2].count('F')
 print(ans)
+
+# Pythonic
+
+print(sum(input()[i % 2 :: 2].count("F") for i in range(8)))
+
 
 #하얀 칸 길게 풀어 쓴 코드 
 chess = 0
@@ -51,4 +56,27 @@ for i in range(8):
         elif i%2!=0 and j%2!=0:
             if table[j]=='F':
                 chess+=1
-print(chess)
+print(chess) """
+
+# 나는 요리사다 
+score = []
+
+for i in range(5):
+    score.append(sum(map(int, input())))
+
+print(score.index(max(score))+1, max(score))
+
+scores = []
+max = 0
+maxidx = 0
+for i in range(5):
+    scores.append(sum(map(int, input().split())))
+
+for idx, score in enumerate(scores):
+    if score > max:
+        maxidx = idx
+        max = score
+
+print('{} {}'.format(maxidx + 1, max))
+
+# 평균은 넘겠지 
