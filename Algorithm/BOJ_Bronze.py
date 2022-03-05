@@ -138,3 +138,13 @@ for columns in zip(*files):
 
 print(pattern)
 
+# 세로 읽기 10798번 
+words = [input() for _ in range(5)]
+max_len = max(len(word) for word in words) # 가장 긴 문자열을 기준으로 설정
+
+for i in range(max_len):
+    for word in words:
+        if i < len(word): # 길이가 짧은 문자열에 대해 에러 방지
+            print(word[i], end="")
+
+            
