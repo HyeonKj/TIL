@@ -161,3 +161,14 @@ for _ in range(int(input())):
 # 도화지에 있는 모든 1의 합을 구하기 (색종이가 차지하는 면적)
 print(sum(sum(line) for line in paper))
 
+#직사각형 네 개의 합집합 면적 구하기 2669번
+paper = [[0] * 100 for _ in range(100)]
+
+for _ in range(4):
+    x1, y1, x2, y2 = map(int, input().split())
+    for i in range(x1, x2):
+        for j in range(y1, y2):
+            paper[i][j] = 1
+
+print(sum(sum(line) for line in paper))
+
