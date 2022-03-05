@@ -111,3 +111,18 @@ for j in range(len(word)):
         if word[j] in i:
             test += dial.index(i)+3
 print(test)
+
+#명령 프롬프트 1032
+n = int(input())
+first, others = input(), [input() for _ in range(n - 1)]
+pattern = ""
+
+for i, char in enumerate(first):
+    for other in others:
+        if char != other[i]:
+            pattern += "?"
+            break
+    else:
+        pattern += char
+
+print(pattern)
