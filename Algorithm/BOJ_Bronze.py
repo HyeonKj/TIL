@@ -57,7 +57,7 @@ for i in range(8):
             if table[j]=='F':
                 chess+=1
 print(chess) """
-
+""" 
 # 나는 요리사다 
 score = []
 
@@ -78,5 +78,36 @@ for idx, score in enumerate(scores):
         max = score
 
 print('{} {}'.format(maxidx + 1, max))
-
+ """
 # 평균은 넘겠지 
+
+
+# 듣보잡 
+# n, m = map(int, input().split())
+
+# a = set()
+
+# for i in range(n):
+#     a.add(input())
+
+# b = set()
+
+# for i in range(m):
+#     b.add(input())
+
+# result = sorted(list(a & b))
+
+# print(len(result))
+
+# for i in result:
+#     print(i)
+
+# 5622 다이얼
+dial = ['ABC', 'DEF', 'GHI', 'JKL', 'MNO', 'PQRS', 'TUV', 'WXYZ']
+word = input()
+test = 0
+for j in range(len(word)):
+    for i in dial:
+        if word[j] in i:
+            test += dial.index(i)+3
+print(test)
