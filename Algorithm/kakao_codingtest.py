@@ -14,3 +14,7 @@ def solution(s):
     for i in range(10):
         s = s.replace(num[i],str(i))
     return int(s)
+
+# 강사님 풀이
+#edukyle.hphk@gmail.com
+
