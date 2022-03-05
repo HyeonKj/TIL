@@ -79,8 +79,14 @@ for idx, score in enumerate(scores):
 
 print('{} {}'.format(maxidx + 1, max))
  """
-# 평균은 넘겠지 
+# 평균은 넘겠지 4344
+for _ in range(int(input())):
+    n, *scores = map(int, input().split())
+    average = sum(scores) / n
+    high_scores = [score for score in scores if score > average]
 
+    result = (len(high_scores) / n) * 100
+    print(f"{result:.3f}%")
 
 # 듣보잡 
 # n, m = map(int, input().split())
@@ -203,3 +209,5 @@ for t in range(1, int(input()) + 1):
 scores = [sum(map(int, input().split())) for i in range(5)]
 winner_score = max(scores)
 print(scores.index(winner_score) + 1, winner_score)
+
+
