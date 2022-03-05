@@ -172,7 +172,7 @@ for _ in range(4):
 
 print(sum(sum(line) for line in paper))
 
-#스도쿠 채점 
+#스도쿠 채점 9291
 def is_correct(sudoku):
     for line in sudoku:
         if len(set(line)) < 9: # 1~9에서 하나라도 중복되면 길이가 9보다 작음
@@ -196,4 +196,10 @@ for t in range(1, int(input()) + 1):
         print(f"Case {t}: CORRECT")
     else:
         print(f"Case {t}: INCORRECT")
-        
+
+# 나는 요리사다 2953번
+# 더 간결한 풀이
+
+scores = [sum(map(int, input().split())) for i in range(5)]
+winner_score = max(scores)
+print(scores.index(winner_score) + 1, winner_score)
