@@ -39,7 +39,7 @@ for i in range(len(value)) :
   if value[i] not in data :
     print(value[i], end='') """
 
-#no.2789 replace 사용
+""" #no.2789 replace 사용
 
 word = input()
 
@@ -54,4 +54,11 @@ word = input()
 for i in "CAMBRIDGE":
     word = word.replace(i, "")
 
-print(word)
+print(word) """
+
+#특수 문자 출력하기 
+print("문자열")
+print("따옴표출력안됨""")
+print('따옴표출력\"\"')
+print("\\")
+print(r"\\")
