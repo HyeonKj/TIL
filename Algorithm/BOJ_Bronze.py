@@ -147,4 +147,17 @@ for i in range(max_len):
         if i < len(word): # 길이가 짧은 문자열에 대해 에러 방지
             print(word[i], end="")
 
-            
+#색종이 
+# 도화지를 모두 0이 담긴 이차원 리스트로 초기화
+paper = [[0] * 100 for _ in range(100)]
+
+for _ in range(int(input())):
+    x, y = map(int, input().split())
+    for i in range(x, x + 10):
+        for j in range(y, y + 10):
+            # 색칠 (이미 칠해진 곳이라도 1이기 때문에 중복X)
+            paper[i][j] = 1
+
+# 도화지에 있는 모든 1의 합을 구하기 (색종이가 차지하는 면적)
+print(sum(sum(line) for line in paper))
+
