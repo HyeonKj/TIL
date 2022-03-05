@@ -67,3 +67,6 @@ print("한\t줄 \n 두\t번\t째 줄\t")
 print("\"안녕하세요\'")
 print("\"C:\Download\\'hello'.py\"")
 print('print("Hello\\nWorld")')
+
+c = input()
+print(c)
