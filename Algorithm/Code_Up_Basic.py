@@ -19,3 +19,9 @@ print(b)
 print(a)
 
 # 5. ###################
+f = float(input())
+print(f)  #f에 저장되어있는 값을 출력하고 줄을 바꾼다.
+print(f)
+print(f)
+
+# 6. ###############
