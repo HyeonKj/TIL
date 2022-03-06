@@ -7,9 +7,15 @@
 # print(b)
 
 # 3. ################
-a = input() 
-b = input()
-print(a)
-print(b)
+# a = input() 
+# b = input()
+# print(a)
+# print(b)
 
 # 4. ##################
+a = input()
+b = input()
+print(b)
+print(a)
+
+# 5. ###################
