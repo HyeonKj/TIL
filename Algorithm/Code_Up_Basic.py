@@ -34,5 +34,9 @@ print(b) """
 # print(m, n)
 
 # 8. ################
-s = input()
-print(s, s, s)
+# s = input()
+# print(s, s, s)
+
+#9. #################
+a, b = input().split(':')
+print(a, b, sep=':')
