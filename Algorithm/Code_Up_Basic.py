@@ -66,6 +66,13 @@ print(b) """
 # print(s[1])
 
 #15. ###############
-w1, w2 = input().split()
-s = w1 + w2
-print(s)
+# w1, w2 = input().split()
+# s = w1 + w2
+# print(s)
+
+#16. ##################
+a, b = input().split()
+c = int(a) + int(b)
+print(c)
+
+# 17. @@@@@@@@@@@@@
