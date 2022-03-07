@@ -12,7 +12,7 @@
 # print(a)
 # print(b)
 
-# 4. ##################
+""" # 4. ##################
 a = input()
 b = input()
 print(b)
@@ -22,6 +22,9 @@ print(a)
 f = float(input())
 print(f)  #f에 저장되어있는 값을 출력하고 줄을 바꾼다.
 print(f)
-print(f)
+print(f) """
 
 # 6. ###############
+a, b = input().split()
+print(a)
+print(b)
