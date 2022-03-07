@@ -62,5 +62,10 @@ print(b) """
 # print(s[0:2], s[2:4], s[4:6])
 
 # 14. ###############
-s = input().split(':')
-print(s[1])
+# s = input().split(':')
+# print(s[1])
+
+#15. ###############
+w1, w2 = input().split()
+s = w1 + w2
+print(s)
