@@ -29,6 +29,10 @@ a, b = input().split()
 print(a)
 print(b) """
 
-# 7. ##############
-n, m = input().split(' ')
-print(m, n)
+# # 7. ##############
+# n, m = input().split(' ')
+# print(m, n)
+
+# 8. ################
+s = input()
+print(s, s, s)
