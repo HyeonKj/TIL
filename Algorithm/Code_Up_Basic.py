@@ -42,6 +42,9 @@ print(b) """
 # print(a, b, sep=':')
 
 # 10. ###################
-y, m, d = input().split('.')
-print(d, m, y, sep='-')
+# y, m, d = input().split('.')
+# print(d, m, y, sep='-')
 
+# 11. ###############3
+birth, n = input().split('-')
+print(birth, n, sep='')
