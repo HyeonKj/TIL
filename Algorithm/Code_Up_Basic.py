@@ -24,7 +24,11 @@ print(f)  #f에 저장되어있는 값을 출력하고 줄을 바꾼다.
 print(f)
 print(f) """
 
-# 6. ###############
+""" # 6. ###############
 a, b = input().split()
 print(a)
-print(b)
+print(b) """
+
+# 7. ##############
+n, m = input().split(' ')
+print(m, n)
