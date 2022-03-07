@@ -38,5 +38,10 @@ print(b) """
 # print(s, s, s)
 
 #9. #################
-a, b = input().split(':')
-print(a, b, sep=':')
+# a, b = input().split(':')
+# print(a, b, sep=':')
+
+# 10. ###################
+y, m, d = input().split('.')
+print(d, m, y, sep='-')
+
