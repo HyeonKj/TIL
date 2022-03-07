@@ -71,8 +71,13 @@ print(b) """
 # print(s)
 
 #16. ##################
-a, b = input().split()
-c = int(a) + int(b)
-print(c)
+# a, b = input().split()
+# c = int(a) + int(b)
+# print(c)
 
 # 17. @@@@@@@@@@@@@
+n1 = float(input())
+n2 = float(input())
+print(n1 + n2)
+
+#18. #####################3
