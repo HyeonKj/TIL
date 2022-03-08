@@ -40,7 +40,9 @@
 - **ReLU(Rectified Linear Unit) 계층**은 음수 값은 0에 매핑하고 양수 값은 그대로 두어서 더 빠르고 효과적인 훈련이 이루어지도록 합니다. 이때 활성화된 특징만 다음 계층으로 전달되므로 이를 활성화라고도 합니다.
 - **풀링 계층**은 비선형 다운샘플링을 수행하여 신경망이 학습해야 하는 파라미터의 개수를 줄임으로써 출력을 단순화합니다.
 
-![img](https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png)
+![img](https://s.pstatic.net/static/www/mobile/edit/2021/0701/cropImg_728x360_67071928262748357.jpeg)
+
+============
 
 
 
