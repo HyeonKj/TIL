@@ -4,4 +4,8 @@
 
 ### 2022. 03. 08 
 # CNN이란 무엇인가 
+=
+### Convolutional Neural Network의 약자로 일반 Deep Neural Network에서 이미지나 영상과 같은 데이터를 처리할 때 발생하는 문제점들을 보완한 방법이다. 
+
+--------------------
 
