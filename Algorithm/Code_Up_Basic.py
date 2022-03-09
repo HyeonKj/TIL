@@ -135,3 +135,13 @@ a, b = input().split()
 print(bool(int(a)) and bool(int(b)))
 
 # 30 ###########3\
+#다음 코드는 홀 수만 더해 출력한다.
+n = int(input())
+s = 0
+for i in range(1, n+1) :
+  if i%2==1 :
+    s += i
+
+print(s)
+
+#31. ###########
