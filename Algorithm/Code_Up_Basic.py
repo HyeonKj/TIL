@@ -104,4 +104,10 @@ i = input()
 print(chr(n+1))
 
 # 23. 
+a, b = input()
+c = int(a) - int(b)
+print(c)
+
+
+# 24. $$$$
 
