@@ -110,4 +110,8 @@ print(c)
 
 
 # 24. $$$$
+w, n = input().split()
+print(w*int(n))
+
+# 25. ####
 
