@@ -131,3 +131,7 @@ n = int(input())
 print(bool(n))
 
 # 29. 
+a, b = input().split()
+print(bool(int(a)) and bool(int(b)))
+
+# 30 ###########3\
