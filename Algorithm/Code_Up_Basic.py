@@ -119,4 +119,8 @@ s = input()
 print(int(n)*s)
 
 # 26. ############
+a=float(input())
+print( format(a, ".2f") )
+
+# 27. #
 
