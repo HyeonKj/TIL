@@ -127,4 +127,7 @@ a = bool(int(input()))
 print(not a)
 
 # 28. ####
+n = int(input())
+print(bool(n))
 
+# 29. 
