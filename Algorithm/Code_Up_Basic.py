@@ -123,4 +123,8 @@ a=float(input())
 print( format(a, ".2f") )
 
 # 27. #
+a = bool(int(input()))
+print(not a)
+
+# 28. ####
 
