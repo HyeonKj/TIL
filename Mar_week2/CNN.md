@@ -59,6 +59,8 @@ Stride =2
 
 ===============
 # Padding 개요
-필터를 적용하여 Conv 연산 수행 시 출력 Feature map 대비 계속적으로 
+ * 필터를 적용하여 Conv 연산 수행 시 출력 Feature map 대비 계속적으로 작아지는 것을 막기 위해 적용.
+
+* 필터 적용 전 보존하려는 Feature map 크기에 맞게 입력 feature map의 좌우 끝과 상하 끝에 각각 열과 행을 추가 한뒤 0값을 채워 입력 Feature size
 
 
