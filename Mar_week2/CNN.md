@@ -48,7 +48,17 @@ CNN은 두 가지 측면
 1. 피쳐 추출 features
 2. 똑같은 딥러닝 기법 사용 classification
 구조가 비슷하다. 
+=================
 
+Stride = 1 디폴트값.
+================
+Stride =2 
+- 두 칸씩 필터가 이동한다. 
+- 이전 layer의 정보 를 상대적으로 제한적으로 다음 LAYER에 전달
+- Computation 연산이 절반으로 향상
 
+===============
+# Padding 개요
+필터를 적용하여 Conv 연산 수행 시 출력 Feature map 대비 계속적으로 
 
 
