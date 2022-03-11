@@ -204,6 +204,9 @@ for t in range(1, int(input()) + 1):
         print(f"Case {t}: INCORRECT")
 
 # 나는 요리사다 2953번
+a = [sum(list(map(int,input().split()))) for i in range(5)]
+print(a.index(max(a))+1,max(a))
+
 # 더 간결한 풀이
 
 scores = [sum(map(int, input().split())) for i in range(5)]
