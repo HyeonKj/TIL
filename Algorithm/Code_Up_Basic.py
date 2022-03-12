@@ -236,3 +236,12 @@ print(-n)
 # # f-string을 이용해 값 대입하기
 # print(f'{a} + {b} + {a+b}')
 # print(f'{b} + {a} + {a+b}')
+
+
+""" s = 'python'
+# f-string 좌측 정렬
+print(f'1{s:<10}2')
+# f-string 우측 정렬
+print(f'1{s:>10}2')
+# f-string 가운데 정렬
+print(f'1{s:^10}2') """
