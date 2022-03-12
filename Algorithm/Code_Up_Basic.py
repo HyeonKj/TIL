@@ -95,7 +95,7 @@ print('%X'% n) """
 # n = ord(input())
 # print(n)
 
-# 21. 
+""" # 21. 
 c = int(input())
 print(chr(c))  #c에 저장되어 있는 정수 값을 유니코드 문자(chracter)로 바꿔 출력한다. 
 
@@ -161,6 +161,10 @@ print(int(c))
 # 33. #########
 a = input()
 n = int(a, 16)      #입력된 a를 16진수로 인식해 변수 n에 저장
-print('%o' % n)  #n에 저장되어있는 값을 8진수(octal) 형태 문자열로 출력
-
+# print('%o' % n)  # n에 저장되어있는 값을 8진수(octal) 형태 문자열로 출력
+"""
 # 34.###########
+n = int(input())
+print(-n)
+
+# 34, ###########
