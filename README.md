@@ -31,6 +31,7 @@
 
 
 + Tough times never last, but tough people do.
++ BE TO 
 + I’ve failed **over and over and over again** in my life and that is why I succeed.
 + A good friend can tell you what is the matter with you in a minute. He may not seem such a good friend after telling.
 + Procrastination is the thief of time.
