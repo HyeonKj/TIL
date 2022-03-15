@@ -533,6 +533,8 @@ for i in li:
 # 6032
 print(-int(input()))
 
+#6033
+print(chr(ord(input())+1))
     
 
 
