@@ -608,6 +608,11 @@ print(a*2)
 n = int(input())
 print(n<<1)
 
+#6047
+a, b = map(int, input().split())
+print(a * (2 ** b))
+
+
 
 
 
