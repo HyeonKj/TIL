@@ -616,6 +616,10 @@ print(a * (2 ** b))
 a, b = map(int, input().split())
 print(a < b)
 
+#6049
+a, b = map(int, input().split())
+print(a == b)
+
 
 
 
