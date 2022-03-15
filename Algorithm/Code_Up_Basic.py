@@ -735,6 +735,20 @@ else:
     season = 'fall'
 print(season)
 
+#6071
+i = True
+while(i):
+    num = int(input())
+    if(num == 0):
+        i = False
+    else:
+        print(num)
+#6072
+num = int(input())
+while(num > 0):
+    print(num)
+    num -= 1
+
 
 
 
