@@ -630,6 +630,12 @@ print(a != b)
 #6052
 print(bool(int(input())))
 
+#6053
+print(not bool(int(input())))
+#6054
+a, b = map(int, input().split())
+print(bool(a) and bool(b))
+
 
 
 
