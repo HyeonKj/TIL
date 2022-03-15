@@ -646,5 +646,17 @@ if (bool(a) != bool(b)):
 else:
     print(False)
 
+#6057
+a, b = map(int, input().split())
+if (bool(a) == bool(b)):
+    print(True)
+else:
+    print(False)
+#6058
+a, b = map(int, input().split())
+print(bool(a) is False and bool(b) is False)
+
+
+
 
 
