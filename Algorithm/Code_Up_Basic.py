@@ -689,6 +689,27 @@ for i in data:
     else:
         print('odd')
 
+#6067
+data = int(input())
+if(data % 2 == 0 and data < 0):
+    print('A')
+elif(data % 2 != 0 and data < 0):
+    print('B')
+elif(data % 2 == 0 and data > 0):
+    print('C')
+elif(data % 2 != 0 and data > 0):
+    print('D')
+#6068
+score = int(input())
+if(score >= 90):
+    print('A')
+elif(score >= 70):
+    print('B')
+elif(score >= 40):
+    print('C')
+elif(score >= 0):
+    print('D')
+
 
 
 
