@@ -656,6 +656,12 @@ else:
 a, b = map(int, input().split())
 print(bool(a) is False and bool(b) is False)
 
+#6059
+print(~int(input()))
+#6060
+a, b = map(int, input().split())
+print(a & b)
+
 
 
 
