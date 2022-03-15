@@ -544,6 +544,13 @@ print(int(a) - int(b))
 a, b = input().split()
 print(float(a) * float(b))
 
+#6036
+s = input().split()
+for i in range(int(s[1])):
+    print(s[0], end='')
+# s = input().split()
+# print(s[0] * int(s[1]))
+
 
 
 
