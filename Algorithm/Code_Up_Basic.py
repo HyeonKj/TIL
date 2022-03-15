@@ -530,6 +530,8 @@ while flag:
 for i in li:
     print(' '.join(map(str, i)))
 
+# 6032
+print(-int(input()))
 
     
 
