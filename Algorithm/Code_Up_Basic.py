@@ -602,5 +602,14 @@ b = int(b)
 c = int(c)
 print(a + b + c, round(((a + b + c) / 3), 2))
 
+#6046
+a = int(input())
+print(a*2)
+n = int(input())
+print(n<<1)
+
+
+
+
 
 
