@@ -540,6 +540,10 @@ print(chr(ord(input())+1))
 a, b = input().split()
 print(int(a) - int(b))
 
+#6035
+a, b = input().split()
+print(float(a) * float(b))
+
 
 
 
