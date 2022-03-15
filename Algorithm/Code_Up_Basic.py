@@ -575,5 +575,9 @@ print(int(a) % int(b))
 #6042
 print(round(float(input()), 2))
 
+#6043
+a, b = map(float, input().split())
+print('%.3f' %round((a / b), 3))
+
 
 
