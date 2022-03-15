@@ -662,6 +662,13 @@ print(~int(input()))
 a, b = map(int, input().split())
 print(a & b)
 
+#6061
+a, b = map(int, input().split())
+print(a | b)
+#6062
+a, b = map(int, input().split())
+print(a ^ b)
+
 
 
 
