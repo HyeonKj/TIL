@@ -556,7 +556,9 @@ count = int(input())
 s = input()
 print(s * count)
 
-
+#6038
+a, b = input().split()
+print(int(a) ** int(b))
 
 
 
