@@ -1,8 +1,5 @@
-# -*- coding: utf-8 -*-
+""" # -*- coding: utf-8 -*-
 """
-Created on Fri Feb  4 17:23:42 2022
-
-@author: user
 """
 import pymysql
 import requests
@@ -40,3 +37,4 @@ for company_code in primary_key:
     res = requests.get(url)
     html_str = res.text
     bs_obj = bs4.BeautifulSoup(html_str)
+ """
