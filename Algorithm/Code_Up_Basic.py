@@ -850,3 +850,18 @@ total = a
 for i in range(a, a + n - 1):
 	total += b
 print(total)
+
+#6089
+a, b, n = map(int, input().split())
+total = a
+for i in range(a, a + n - 1):
+	total *= b
+print(total)
+#6090
+a, m, d, n = map(int, input().split())
+total = a
+for i in range(a, a + n - 1):
+	total = total * m + d
+print(total)
+
+
