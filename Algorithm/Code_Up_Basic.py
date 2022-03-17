@@ -864,4 +864,20 @@ for i in range(a, a + n - 1):
 	total = total * m + d
 print(total)
 
+#6091
+a, b, c = map(int, input().split())
+d = 1
+while d % a != 0 or d % b != 0 or d % c != 0:
+    d += 1
+print(d)
+#6092
+from random import randint
+n = int(input())
+temp = [0] * 23
+nums = input().split()
+for i in nums:
+    temp[int(i)-1] += 1
+for i in temp:
+    print(i, end=' ')
+
 
