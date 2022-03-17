@@ -35,3 +35,17 @@ True
 # 'True'
 # >>> type(bool)
 # <class 'str'>
+
+#6077
+n = int(input())
+s = 0
+for i in range(n + 1):
+    if(i % 2 == 0):
+        s += i
+print(s)
+#6078
+c = ''
+while(c != 'q'):
+    c = input()
+    print(c)
+
