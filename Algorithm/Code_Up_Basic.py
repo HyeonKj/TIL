@@ -829,4 +829,24 @@ mb = round(((w*h*b) / 8 / 1024 / 1024), 2)
 print('{:.2f} MB'.format(mb))
 
 
-
+#6086
+n = int(input())
+total = 0
+for i in range(1, n + 1):
+    total += i
+    if(total >= n):
+        break
+print(total)
+#6087
+n = int(input())
+for i in range(1, n + 1):
+    if(i % 3 == 0):
+        pass
+    else:
+        print(i)
+#6088
+a, b, n = map(int, input().split())
+total = a
+for i in range(a, a + n - 1):
+	total += b
+print(total)
