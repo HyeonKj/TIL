@@ -891,4 +891,31 @@ n = int(input())
 nums = map(int, input().split())
 print(min(nums))
 
+#6095
+li = [[0 for i in range(19)] for j in range(19)]
+n = int(input())
+for i in range(n):
+    x, y = map(int, input().split())
+    if(li[x-1][y-1] != 1):
+        li[x-1][y-1] = 1
+for i in li:
+	print(' '.join(map(str, i)))
+#6096
+li = []
+for i in range(19):
+    li.append([])
+    k = input().split()
+    for e in k:
+        li[i].append(int(e))
+n = int(input())
+x = []
+y = []
+for i in range(n):
+    a, b = map(int, input().split())
+    for j in range(19):
+        li[a-1][j] = 1 if li[a-1][j] != 1 else 0
+        li[j][b-1] = 1 if li[j][b-1] != 1 else 0
+for i in li:
+    print(' '.join(map(str, i)))
+
 
