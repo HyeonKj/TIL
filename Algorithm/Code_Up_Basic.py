@@ -783,6 +783,20 @@ while(c != 'q'):
     c = input()
     print(c)
 
-    
+
+#6079
+n = int(input())
+i = 0
+s = 0
+while(s < n):
+	i += 1
+	s += i
+print(i)
+#6080
+n, m = map(int, input().split())
+for i in range(1, n + 1):
+    for j in range(1, m + 1):
+        print('{} {}'.format(i, j))
+
 
 
