@@ -880,4 +880,15 @@ for i in nums:
 for i in temp:
     print(i, end=' ')
 
+#6093
+n = int(input())
+nums = input().split()
+nums.reverse()
+for i in nums:
+    print(int(i), end=' ')
+#6094
+n = int(input())
+nums = map(int, input().split())
+print(min(nums))
+
 
