@@ -810,5 +810,23 @@ for i in range(1, n + 1):
     else:
         print(i, end = ' ')
 
+#6083
+a, b, c = map(int, input().split())
+count = 0
+for i in range(a):
+	for j in range(b):
+		for k in range(c):
+			print('{} {} {}'.format(i, j, k))
+			count += 1
+print(count)
+#6084
+h, b, c, s = map(int, input().split())
+mb = round((h * b * c * s / 8) / 1024 / 1024, 1)
+print('{} MB'.format(mb))
+#6085
+w, h, b = map(int, input().split())
+mb = round(((w*h*b) / 8 / 1024 / 1024), 2)
+print('{:.2f} MB'.format(mb))
+
 
 
