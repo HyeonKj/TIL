@@ -938,4 +938,31 @@ for i in range(n):
 for i in li:
     print(' '.join(map(str, i)))
 
+#6098
+li = []
+for i in range(10):
+    li.append([])
+    k = input().split()
+    for e in k:
+        li[i].append(int(e))
+x, y = 1, 1
+flag = True
+
+while flag:
+    if li[x][y] == 2:
+        li[x][y] = 9
+        flag = False
+    elif (li[x][y+1]) == 1:
+        if li[x+1][y] == 1:
+            li[x][y] = 9
+            flag = False
+        else:
+            li[x][y] = 9
+            x += 1
+    else:
+        li[x][y] = 9
+        y += 1
+for i in li:
+    print(' '.join(map(str, i)))
+
 
