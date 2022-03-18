@@ -49,3 +49,9 @@ print('{}\n{}'.format(int(a), int(b)))
 a, b = input().split()
 print('{} {}'.format(b, a))
 
+#6017
+s = input()
+print(s,s,s)
+#6018
+print(time[0]+':'+time[1])
+
