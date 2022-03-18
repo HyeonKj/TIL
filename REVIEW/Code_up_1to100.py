@@ -55,3 +55,10 @@ print(s,s,s)
 #6018
 print(time[0]+':'+time[1])
 
+#6019
+date = input().split('.')
+date.reverse()
+print('-'.join(date))
+#6020
+print(''.join(input().split('-')))
+
