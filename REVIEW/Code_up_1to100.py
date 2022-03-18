@@ -91,3 +91,7 @@ print('%x'%int(input()))
 #6028
 print('%x'.upper()%int(input()))
 
+#6029
+print('%o'%int(input(), 16))
+#6030
+print(ord(input()))
