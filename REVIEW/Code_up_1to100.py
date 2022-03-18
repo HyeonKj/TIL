@@ -70,3 +70,11 @@ for i in s:
 date = input()
 print(date[:2] + ' ' + date[2:4] + ' ' + date[4:])
 
+#6023
+date = input().split(':')
+print(date[1])
+#6024
+a, b = input().split()
+s = a + b
+print(s)
+
