@@ -18,3 +18,10 @@ print('"!@#$%^&*()\'')
 print('''"C:\\Download\\\'hello'.py"''')
 #6008
 print('''print("Hello\\nWorld")''')
+
+# #basic input
+#6009
+print(input())
+#6010 #print(input())
+print(int(input()))
+
