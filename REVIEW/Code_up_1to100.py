@@ -33,3 +33,12 @@ b = int(input())
 print(a)
 print(b)
 
+#6013
+a = input()
+b = input()
+print('{b}\n{a}'.format(b=b, a=a))
+#6014
+a = float(input())
+for i in range(3):
+    print(a)
+
