@@ -42,3 +42,10 @@ a = float(input())
 for i in range(3):
     print(a)
 
+#6015
+a, b = input().split()
+print('{}\n{}'.format(int(a), int(b)))
+#6016
+a, b = input().split()
+print('{} {}'.format(b, a))
+
