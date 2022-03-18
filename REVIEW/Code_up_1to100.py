@@ -78,3 +78,10 @@ a, b = input().split()
 s = a + b
 print(s)
 
+#6025
+a, b = input().split()
+print('{}'.format(int(a)+int(b)))
+#6026
+a = float(input())
+b = float(input())
+print('{}'.format(a + b))
