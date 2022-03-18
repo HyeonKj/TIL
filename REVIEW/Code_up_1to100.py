@@ -85,3 +85,9 @@ print('{}'.format(int(a)+int(b)))
 a = float(input())
 b = float(input())
 print('{}'.format(a + b))
+
+#6027
+print('%x'%int(input()))
+#6028
+print('%x'.upper()%int(input()))
+
