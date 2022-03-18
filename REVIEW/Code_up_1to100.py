@@ -25,3 +25,11 @@ print(input())
 #6010 #print(input())
 print(int(input()))
 
+#6011 #print(input())
+print(float(input()))
+#6012
+a = int(input())
+b = int(input())
+print(a)
+print(b)
+
