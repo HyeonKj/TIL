@@ -62,3 +62,11 @@ print('-'.join(date))
 #6020
 print(''.join(input().split('-')))
 
+#6021
+s = input()
+for i in s:
+    print(i)
+#6022
+date = input()
+print(date[:2] + ' ' + date[2:4] + ' ' + date[4:])
+
