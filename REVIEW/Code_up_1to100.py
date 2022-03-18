@@ -33,58 +33,58 @@ b = int(input())
 print(a)
 print(b)
 
-#6013
-a = input()
-b = input()
-print('{b}\n{a}'.format(b=b, a=a))
-#6014
-a = float(input())
-for i in range(3):
-    print(a)
+# #6013
+# a = input()
+# b = input()
+# print('{b}\n{a}'.format(b=b, a=a))
+# #6014
+# a = float(input())
+# for i in range(3):
+#     print(a)
 
-#6015
-a, b = input().split()
-print('{}\n{}'.format(int(a), int(b)))
-#6016
-a, b = input().split()
-print('{} {}'.format(b, a))
+# #6015
+# a, b = input().split()
+# print('{}\n{}'.format(int(a), int(b)))
+# #6016
+# a, b = input().split()
+# print('{} {}'.format(b, a))
 
-#6017
-s = input()
-print(s,s,s)
-#6018
-print(time[0]+':'+time[1])
+# #6017
+# s = input()
+# print(s,s,s)
+# #6018
+# print(time[0]+':'+time[1])
 
-#6019
-date = input().split('.')
-date.reverse()
-print('-'.join(date))
-#6020
-print(''.join(input().split('-')))
+# #6019
+# date = input().split('.')
+# date.reverse()
+# print('-'.join(date))
+# #6020
+# print(''.join(input().split('-')))
 
-#6021
-s = input()
-for i in s:
-    print(i)
-#6022
-date = input()
-print(date[:2] + ' ' + date[2:4] + ' ' + date[4:])
+# #6021
+# s = input()
+# for i in s:
+#     print(i)
+# #6022
+# date = input()
+# print(date[:2] + ' ' + date[2:4] + ' ' + date[4:])
 
-#6023
-date = input().split(':')
-print(date[1])
-#6024
-a, b = input().split()
-s = a + b
-print(s)
+# #6023
+# date = input().split(':')
+# print(date[1])
+# #6024
+# a, b = input().split()
+# s = a + b
+# print(s)
 
-#6025
-a, b = input().split()
-print('{}'.format(int(a)+int(b)))
-#6026
-a = float(input())
-b = float(input())
-print('{}'.format(a + b))
+# #6025
+# a, b = input().split()
+# print('{}'.format(int(a)+int(b)))
+# #6026
+# a = float(input())
+# b = float(input())
+# print('{}'.format(a + b))
 
 #6027
 print('%x'%int(input()))
@@ -98,3 +98,11 @@ print(ord(input()))
 
 #6031
 print(chr(int(input())))
+
+#########################################
+# 정수 입력받기
+n = int(input())
+# 실수 입력받기
+n = float(input())
+##########################################
+
