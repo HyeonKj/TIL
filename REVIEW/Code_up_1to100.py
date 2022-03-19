@@ -171,3 +171,9 @@ b = int(b)
 c = int(c)
 print(a + b + c, round(((a + b + c) / 3), 2))
 
+#6046
+print(int(input())<<1)
+#6047
+a, b = map(int, input().split())
+print(a * (2 ** b))
+
