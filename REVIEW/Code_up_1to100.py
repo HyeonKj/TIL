@@ -177,3 +177,10 @@ print(int(input())<<1)
 a, b = map(int, input().split())
 print(a * (2 ** b))
 
+#6048
+a, b = map(int, input().split())
+print(a < b)
+#6049
+a, b = map(int, input().split())
+print(a == b)
+
