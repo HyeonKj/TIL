@@ -145,3 +145,18 @@ print(int(a) % int(b))
 #6042
 print(round(float(input()), 2))
 
+#6043
+a, b = map(float, input().split())
+print('%.3f' %round((a / b), 3))
+#6044
+a, b = input().split()
+a = int(a)
+b = int(b)
+if(a >= 0 and b != 0):
+    print(a + b)
+    print(a - b)
+    print(a * b)
+    print(a // b)
+    print(a % b)
+    print(round((a / b), 2))
+
