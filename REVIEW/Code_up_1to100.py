@@ -132,3 +132,10 @@ print(s * count)
 a, b = input().split()
 print(int(a) ** int(b))
 
+#6039
+a, b = input().split()
+print(float(a) ** float(b))
+#6040
+a, b = input().split()
+print(int(a) // int(b))
+
