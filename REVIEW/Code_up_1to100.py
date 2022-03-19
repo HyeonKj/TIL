@@ -124,3 +124,11 @@ for i in range(int(s[1])):
 # s = input().split()
 # print(s[0] * int(s[1]))
 
+#6037
+count = int(input())
+s = input()
+print(s * count)
+#6038
+a, b = input().split()
+print(int(a) ** int(b))
+
