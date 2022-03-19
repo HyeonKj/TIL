@@ -106,3 +106,11 @@ n = int(input())
 n = float(input())
 ##########################################
 
+#6032
+print(-int(input()))
+#6033
+print(chr(ord(input())+1))
+#6034
+a, b = input().split()
+print(int(a) - int(b))
+
