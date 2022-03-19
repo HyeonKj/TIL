@@ -139,3 +139,9 @@ print(float(a) ** float(b))
 a, b = input().split()
 print(int(a) // int(b))
 
+#6041
+a, b = input().split()
+print(int(a) % int(b))
+#6042
+print(round(float(input()), 2))
+
