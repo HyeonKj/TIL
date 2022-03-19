@@ -114,3 +114,13 @@ print(chr(ord(input())+1))
 a, b = input().split()
 print(int(a) - int(b))
 
+#6035
+a, b = input().split()
+print(float(a) * float(b))
+#6036
+s = input().split()
+for i in range(int(s[1])):
+    print(s[0], end='')
+# s = input().split()
+# print(s[0] * int(s[1]))
+
