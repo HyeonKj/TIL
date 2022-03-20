@@ -279,3 +279,16 @@ elif(score >= 40):
 elif(score >= 0):
     print('D')
 
+#6069
+grade = input()
+if(grade == 'A'):
+    print('best!!!')
+elif(grade == 'B'):
+    print('good!!')
+elif(grade == 'C'):
+    print('run!')
+elif(grade == 'D'):
+    print('slowly~')
+else:
+    print('what?')
+
