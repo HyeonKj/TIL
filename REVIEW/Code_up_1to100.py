@@ -195,3 +195,5 @@ print(a != b)
 #6052
 print(bool(int(input())))
 
+#6053
+print(not bool(int(input())))
