@@ -268,3 +268,14 @@ elif(data % 2 == 0 and data > 0):
 elif(data % 2 != 0 and data > 0):
     print('D')
 
+#6068
+score = int(input())
+if(score >= 90):
+    print('A')
+elif(score >= 70):
+    print('B')
+elif(score >= 40):
+    print('C')
+elif(score >= 0):
+    print('D')
+
