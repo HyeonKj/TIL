@@ -188,3 +188,6 @@ print(a == b)
 a, b = map(int, input().split())
 print(a <= b)
 
+#6051
+a, b = map(int, input().split())
+print(a != b)
