@@ -243,3 +243,9 @@ print(a if a > b else b)
 a, b, c = map(int, input().split())
 print((a if a < b else b) if (a if a < b else b) < c else c)
 
+#6065
+data = input().split()
+for i in data:
+    if(int(i) % 2 == 0):
+        print(int(i))
+
