@@ -219,3 +219,9 @@ if (bool(a) == bool(b)):
 else:
     print(False)
 
+#6058
+a, b = map(int, input().split())
+print(bool(a) is False and bool(b) is False)
+#6059
+print(~int(input()))
+
