@@ -329,4 +329,12 @@ a = input()
 count = 0
 while(count <= ord(a)-97):
     print(chr(97+count), end=' ')
-
+    count += 1
+#6075
+n = int(input())
+for i in range(n + 1):
+    print(i)
+#6076
+n = int(input())
+for i in range(n + 1):
+    print(i)
