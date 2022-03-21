@@ -66,6 +66,27 @@ from sklearn.decomposition import TruncatedSVD
 svd = TruncatedSVD(n_components=100, random_state=1234)
 x.shape
 
+svd.fit(x)
+svd.components_.shape
+svd.components_
+
+word_idx = words.index('topic')
+word_idx
+
+svd를 했다는 것은 문서가 차원과 어떤 관계가 있느냐, 
+혹은 차원과 단어가 어떤 관계가 있느냐를 알 수 있다. 
+이 차원으로 문서를 설명할 수 있고 단어를 설명할 수 있다.
+
+1. 문서가 차원과 어떤 관계가 있느냐.
+2. 차원과 단어가 어떤 관계가 있느냐.
 
 
+========================
+### 회전 
+========================
 
+### LSA는 해가 무수히 많음
+
+### R은 kxk 형태의 행렬, R(-1)승은 그 역행렬
+
+### kxk행렬은 k차원에서 회전을 나타냄 
