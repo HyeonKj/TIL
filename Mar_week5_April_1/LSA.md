@@ -1,5 +1,6 @@
 ======================
-## LSA 의 특징 0321
+## LSA 의 특징 0321 
+# theory studying
 =======================
 
 - 계산이 비교적 단순하다
@@ -36,4 +37,35 @@
 - 문서들이 단어가 아닌 의미상으로 재배치
 - 동음이의어, 오탈자 등이 어느정도 처리됨
 - 문서에 존재하는 noise가 줄어서 더 잘 분류됨. 
+
+========
+# LSA 실습 
+========
+
+''' 
+pip install wget # wget 설치 
+
+!wget -c https://github.com/euphoris/datasets/raw/master/neurips.zip
+
+import wget
+wget.download('https://github.com/euphoris/datasets/raw/master/neurips.zip')
+
+import pandas as pd
+df = pd.read_csv('neurips.zip')
+df.head(10)
+
+df.tail()
+
+#전처리 
+
+from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
+cv = TfidfVectorizer(stop_words = 'english', max_features = 2000)
+
+#SVD
+from sklearn.decomposition import TruncatedSVD
+svd = TruncatedSVD(n_components=100, random_state=1234)
+x.shape
+
+
+
 
