@@ -665,4 +665,15 @@ print("1{:>10}2".format("python"))
 print("1{0:^10}2".format("python"))
 print("1{:^10}2".format("python"))
 
+
+
+f-string을 이용한 정렬
+s = 'python'
+# f-string 좌측 정렬
+print(f'1{s:<10}2')
+# f-string 우측 정렬
+print(f'1{s:>10}2')
+# f-string 가운데 정렬
+print(f'1{s:^10}2')
+
 '''
