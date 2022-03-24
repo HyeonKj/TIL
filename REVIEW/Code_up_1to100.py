@@ -625,3 +625,14 @@ for i in li:
 # >>> li = [i*j for i in range(5) for j in range(5) if i*j % 2 != 0]
 # >>> li
 # [1, 3, 3, 9]
+
+
+'''
+코드	설명
+%s	    문자열(string)
+%c	    문자 1개(character)
+%d	    정수(integer)
+%f	    부동소수(floating-point)
+%o	    8진수
+%x	    16진수
+%%      Literal % (문자로서 % 자체를 표현)'''
