@@ -338,3 +338,198 @@ for i in range(n + 1):
 n = int(input())
 for i in range(n + 1):
     print(i)
+
+#6077
+n = int(input())
+s = 0
+for i in range(n + 1):
+    if(i % 2 == 0):
+        s += i
+print(s)
+#6078
+c = ''
+while(c != 'q'):
+    c = input()
+    print(c)
+
+
+#6079
+n = int(input())
+i = 0
+s = 0
+while(s < n):
+	i += 1
+	s += i
+print(i)
+#6080
+n, m = map(int, input().split())
+for i in range(1, n + 1):
+    for j in range(1, m + 1):
+        print('{} {}'.format(i, j))
+
+#6081
+n = input()
+for i in range(1, 15 + 1):
+	print('%x*%x=%x'.upper() %(int(n, 16), int(hex(i), 16), (int(n, 16) * int(hex(i), 16))))
+#6082
+n = int(input())
+for i in range(1, n + 1):
+    if(i % 10 == 3 or i % 10 == 6 or i % 10 == 9):
+        print('X', end = ' ')
+    else:
+        print(i, end = ' ')
+
+#6083
+a, b, c = map(int, input().split())
+count = 0
+for i in range(a):
+	for j in range(b):
+		for k in range(c):
+			print('{} {} {}'.format(i, j, k))
+			count += 1
+print(count)
+#6084
+h, b, c, s = map(int, input().split())
+mb = round((h * b * c * s / 8) / 1024 / 1024, 1)
+print('{} MB'.format(mb))
+#6085
+w, h, b = map(int, input().split())
+mb = round(((w*h*b) / 8 / 1024 / 1024), 2)
+print('{:.2f} MB'.format(mb))
+
+
+#6086
+n = int(input())
+total = 0
+for i in range(1, n + 1):
+    total += i
+    if(total >= n):
+        break
+print(total)
+#6087
+n = int(input())
+for i in range(1, n + 1):
+    if(i % 3 == 0):
+        pass
+    else:
+        print(i)
+#6088
+a, b, n = map(int, input().split())
+total = a
+for i in range(a, a + n - 1):
+	total += b
+print(total)
+
+#6089
+a, b, n = map(int, input().split())
+total = a
+for i in range(a, a + n - 1):
+	total *= b
+print(total)
+#6090
+a, m, d, n = map(int, input().split())
+total = a
+for i in range(a, a + n - 1):
+	total = total * m + d
+print(total)
+
+#6091
+a, b, c = map(int, input().split())
+d = 1
+while d % a != 0 or d % b != 0 or d % c != 0:
+    d += 1
+print(d)
+#6092
+from random import randint
+n = int(input())
+temp = [0] * 23
+nums = input().split()
+for i in nums:
+    temp[int(i)-1] += 1
+for i in temp:
+    print(i, end=' ')
+
+#6093
+n = int(input())
+nums = input().split()
+nums.reverse()
+for i in nums:
+    print(int(i), end=' ')
+#6094
+n = int(input())
+nums = map(int, input().split())
+print(min(nums))
+
+#6095
+li = [[0 for i in range(19)] for j in range(19)]
+n = int(input())
+for i in range(n):
+    x, y = map(int, input().split())
+    if(li[x-1][y-1] != 1):
+        li[x-1][y-1] = 1
+for i in li:
+	print(' '.join(map(str, i)))
+#6096
+li = []
+for i in range(19):
+    li.append([])
+    k = input().split()
+    for e in k:
+        li[i].append(int(e))
+n = int(input())
+x = []
+y = []
+for i in range(n):
+    a, b = map(int, input().split())
+    for j in range(19):
+        li[a-1][j] = 1 if li[a-1][j] != 1 else 0
+        li[j][b-1] = 1 if li[j][b-1] != 1 else 0
+for i in li:
+    print(' '.join(map(str, i)))
+
+#6097
+li = []
+h, w = map(int, input().split())
+for i in range(h):
+	li.append([])
+	for j in range(w):
+		li[i].append(0)
+n = int(input())
+for i in range(n):
+    l, d, x, y = map(int, input().split())
+    for j in range(l):
+        if d == 0:
+            li[x-1][y-1] = 1
+            y += 1
+        else:
+            li[x-1][y-1] = 1
+            x += 1
+for i in li:
+    print(' '.join(map(str, i)))
+
+#6098
+li = []
+for i in range(10):
+    li.append([])
+    k = input().split()
+    for e in k:
+        li[i].append(int(e))
+x, y = 1, 1
+flag = True
+
+while flag:
+    if li[x][y] == 2:
+        li[x][y] = 9
+        flag = False
+    elif (li[x][y+1]) == 1:
+        if li[x+1][y] == 1:
+            li[x][y] = 9
+            flag = False
+        else:
+            li[x][y] = 9
+            x += 1
+    else:
+        li[x][y] = 9
+        y += 1
+for i in li:
+    print(' '.join(map(str, i)))
