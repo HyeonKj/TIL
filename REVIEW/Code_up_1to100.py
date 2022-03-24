@@ -651,4 +651,18 @@ print('{} + {} = {}'.format(a, b, a+b))
 
 # 지정 인덱싱, {}안에 인덱스를 입력해 각 위치에 넣을 값 순서를 정해줄 수 있다.
 print('{0} + {1} = {2}'.format(a, b, a+b))
-print('{1} + {0} = {2}'.format(a, b, a+b))'''
+print('{1} + {0} = {2}'.format(a, b, a+b))
+
+
+
+# format() 좌측 정렬
+print("1{0:<10}2".format("python"))
+print("1{:<10}2".format("python"))
+# format() 우측 정렬
+print("1{0:>10}2".format("python"))
+print("1{:>10}2".format("python"))
+# format() 가운데 정렬
+print("1{0:^10}2".format("python"))
+print("1{:^10}2".format("python"))
+
+'''
