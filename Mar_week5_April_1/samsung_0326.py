@@ -59,3 +59,32 @@ for i in range(6): # 첫 번째 주사위를 기준으로 1~6까지 모두 순�
 
 print(maxnum)
 
+######################
+import sys
+input = sys.stdin.readline
+
+n = int(input())
+board = sorted([tuple(map(int,input().split())) for _ in range(n)])
+
+last_idx, last_h = board[0]
+result = 0
+while(True):
+    max_idx,max_h = 0,0
+    # 현재 위치부터 큰 것이 나올 때까지 탐색
+    for j in range(board.index((last_idx,last_h))+1,n):
+        cur_idx,cur_h = board[j]
+        if cur_h > last_h:
+            result += (cur_idx-last_idx)*last_h
+            last_idx,last_h = cur_idx,cur_h
+            break
+        if cur_h > max_h:
+            max_idx,max_h = cur_idx,cur_h
+    # 현재 위치보다 큰 것이 없다면 가장 컸던 것까지만 곱해주고 인덱스를 그곳으로 옮김
+    else:
+        result += last_h + (max_idx-last_idx-1)*max_h
+        last_idx,last_h = max_idx,max_h
+        if last_idx == 0:
+            break
+print(result)
+
+######################
