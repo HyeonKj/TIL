@@ -231,3 +231,14 @@ for i in range(len(graph)):
         print(graph[i][j],end="")
     print()
 
+
+# 5086 배수와 약수
+
+import sys
+input = sys.stdin.readline
+
+num = tuple(map(int, input().split()))
+
+while num != (0, 0):
+    a = num[0]
+
