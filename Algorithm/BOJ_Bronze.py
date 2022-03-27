@@ -259,3 +259,7 @@ print(today.isoformat())
 a, b = map(int, input().split())
 # print(a+b)
 
+#10718
+print("강한친구 대한 육군")
+print("강한친구 대한 육군")
+
