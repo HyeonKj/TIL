@@ -281,4 +281,5 @@ a, b = map(int, input().split())
 print(a*b)
 
 # 11283
+print(ord(input()) - 44031)
 
