@@ -255,3 +255,7 @@ from datetime import data
 today = data.today()
 print(today.isoformat())
 
+#10757
+a, b = map(int, input().split())
+# print(a+b)
+
