@@ -271,3 +271,9 @@ print(a*b)
 print(a//b)
 print(a%b)
 
+# 10926
+
+id = input("")
+print(id +"??!")
+
+#
