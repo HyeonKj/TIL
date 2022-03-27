@@ -283,3 +283,17 @@ print(a*b)
 # 11283
 print(ord(input()) - 44031)
 
+#11654
+print(ord(input()))
+
+#11942
+print("고려대학교")
+
+#14654
+N, K = map(int, input().split())
+
+for _ in range(N):
+    A, B = map(int, input().split())
+print("비와이")
+
+#
