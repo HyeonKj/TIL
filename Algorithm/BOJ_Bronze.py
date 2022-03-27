@@ -276,4 +276,9 @@ print(a%b)
 id = input("")
 print(id +"??!")
 
-#
+#10998
+a, b = map(int, input().split())
+print(a*b)
+
+# 11283
+
