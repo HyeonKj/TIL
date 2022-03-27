@@ -263,3 +263,11 @@ a, b = map(int, input().split())
 print("강한친구 대한 육군")
 print("강한친구 대한 육군")
 
+# 10869
+a, b = map(int, input().split())
+print(a+b)
+print(a-b)
+print(a*b)
+print(a//b)
+print(a%b)
+
