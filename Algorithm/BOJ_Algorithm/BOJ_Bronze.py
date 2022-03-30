@@ -544,5 +544,9 @@ for i in range(n - 1):
             a[j] = '?'
 print(''.join(a))
 
+# 1085
+x, y, w, h = map(int, input().split())
+print(min(x, y, w-x, h-y))
 
+#
 
