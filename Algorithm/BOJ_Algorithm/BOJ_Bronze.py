@@ -568,5 +568,12 @@ print('( 0 )"""\\')  # \'앞에 \을 붙여준다.
 print('|"^"`    |')
 print("||_/=\\\__|")  # \\ 앞에 \을 하나 더 붙여준다.
 
-#
+#10998
+A,B = input().split()
+print(int(A)*int(B))
+
+A,B = map(int,input().split())
+print(A*B)
+
+
 
