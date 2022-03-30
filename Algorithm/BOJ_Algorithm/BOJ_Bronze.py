@@ -578,5 +578,10 @@ print(A*B)
 #10926
 print(input() + "??!")
 
+# 18108
+y = int(input())
+
+print(y - 543)
+
 
 
