@@ -501,3 +501,9 @@ for i in range(1, n):
 
 print(max(dp[n-1]))
 
+# 1001
+A, B = input().split()
+print(int(A)-int(B))
+
+#
+
