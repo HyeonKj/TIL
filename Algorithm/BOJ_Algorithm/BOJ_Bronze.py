@@ -690,3 +690,11 @@ for i in range(a+1):
     sum = sum + i
 print(sum)
 
+#15552
+import sys
+ 
+inp = int(input())
+for i in range(inp):
+        a,b = map(int, sys.stdin.readline().split())
+        print(a+b)
+
