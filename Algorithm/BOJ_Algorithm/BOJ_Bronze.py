@@ -683,4 +683,10 @@ n = int(input())
 for i in range(1,10):  # 1~9
     print(n, '*', i, '=', n*i)
 
-# 
+# 8393 합
+a = int(input())
+sum = 0
+for i in range(a+1):
+    sum = sum + i
+print(sum)
+
