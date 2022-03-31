@@ -589,5 +589,15 @@ A,B,C = map(int,input().split())
 print((A+B)%C, ((A%C)+(B%C))%C, (A*B)%C, ((A%C)*(B%C))%C, sep='\n')
 # sep='\n'로 줄바꿈
 
+#1330
+A,B = map(int,input().split())
+
+if A > B:
+    print('>')
+elif A < B:
+    print('<')
+else:
+    print('==')
+
 
 
