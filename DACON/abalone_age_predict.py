@@ -185,6 +185,7 @@ for col in train.columns:
     elif train[col].dtypes=='float64':
         num_cols.append(col)
         
+for num_col_first in num_cols:
     for num_col_second in num_cols:
         if (num_col_first != num_col_second):
             train[num_col_first+'/'+num_col_second] = train[num_col_first] / train[num_col_second]
@@ -192,3 +193,8 @@ for col in train.columns:
             test[num_col_first+'/'+num_col_second] = test[num_col_first] / test[num_col_second]
             test[num_col_first+'*'+num_col_second] = test[num_col_first] * test[num_col_second]
 
+feature_cat_generation(train)
+feature_cat_generation(test)
+
+train.to_csv('../data/train_f2.csv', index=False)
+test.to_csv('../data/test_f2.csv', index=False)
