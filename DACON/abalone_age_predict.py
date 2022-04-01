@@ -97,3 +97,30 @@ def feature_cat_generation(df):
     
     return df
 
+train = pd.read_csv("../data/train.csv")
+test = pd.read_csv("../data/test.csv")
+submission = pd.read_csv("../data/sample_submission.csv")
+
+train = train.drop('id', axis=1)
+test = test.drop('id', axis=1)
+
+# 전체 무게 - (껍질 무게 + 껍질이 아닌 무게) Feature 생성
+train['Water Weight'] = train['Whole Weight'] - (train['Shucked Weight'] + train['Shell Weight'])
+test['Water Weight'] = test['Whole Weight'] - (test['Shucked Weight'] + test['Shell Weight'])
+
+# 0.005보다 낮은 수는 0.005로 대체
+train.loc[train[(train['Water Weight']<0.0005)].index, "Water Weight"] = 0.0005
+test.loc[test[(test['Water Weight']<0.0005)].index, "Water Weight"] = 0.0005
+
+# 0.01 값을 0.0으로 대체
+train = train.replace(0.0, 0.01)
+test = test.replace(0.0, 0.01)
+
+cat_cols = []
+num_cols = []
+for col in train.columns:
+    if train[col].dtypes=='object':
+        cat_cols.append(col)
+    elif train[col].dtypes=='float64':
+        num_cols.append(col)
+
