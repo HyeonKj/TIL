@@ -184,3 +184,11 @@ for col in train.columns:
         cat_cols.append(col)
     elif train[col].dtypes=='float64':
         num_cols.append(col)
+        
+    for num_col_second in num_cols:
+        if (num_col_first != num_col_second):
+            train[num_col_first+'/'+num_col_second] = train[num_col_first] / train[num_col_second]
+            train[num_col_first+'*'+num_col_second] = train[num_col_first] * train[num_col_second]
+            test[num_col_first+'/'+num_col_second] = test[num_col_first] / test[num_col_second]
+            test[num_col_first+'*'+num_col_second] = test[num_col_first] * test[num_col_second]
+
