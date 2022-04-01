@@ -124,3 +124,13 @@ for col in train.columns:
     elif train[col].dtypes=='float64':
         num_cols.append(col)
 
+feature_num_scaler(train, test)
+
+cat_cols = []
+num_cols = []
+for col in train.columns:
+    if train[col].dtypes=='object':
+        cat_cols.append(col)
+    elif train[col].dtypes=='float64':
+        num_cols.append(col)
+
