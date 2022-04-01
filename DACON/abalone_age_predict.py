@@ -47,4 +47,53 @@ def feature_num_scaler(train_df, test_df):
         train_df[num_col+'#log10'] = train_df[num_col+'#log10'].replace(0.0, 0.002)
         test_df[num_col+'#log10'] = test_df[num_col+'#log10'].replace(0.0, 0.002)
 
-        
+def feature_cat_generation(df):
+
+    for cat_col in cat_cols:
+        for num_col in num_cols:        
+            new_name = cat_col + "#mean#" + num_col
+            grouped = df.groupby(cat_col)[num_col].mean()
+            df[new_name] = df[cat_col].map(grouped)
+
+            new_name = cat_col + "#std#" + num_col
+            grouped = df.groupby(cat_col)[num_col].std(ddof = 1)
+            df[new_name] = df[cat_col].map(grouped)
+
+            new_name = cat_col + "#var#" + num_col
+            grouped = df.groupby(cat_col)[num_col].var(ddof = 1)
+            df[new_name] = df[cat_col].map(grouped)
+
+            new_name = cat_col + "#max#" + num_col
+            grouped = df.groupby(cat_col)[num_col].max()
+            df[new_name] = df[cat_col].map(grouped)
+
+            new_name = cat_col + "#min#" + num_col
+            grouped = df.groupby(cat_col)[num_col].min()
+            df[new_name] = df[cat_col].map(grouped)
+
+            new_name = cat_col + "#ptp#" + num_col
+            grouped = df.groupby(cat_col)[num_col].agg(np.ptp)
+            df[new_name] = df[cat_col].map(grouped)
+
+            new_name = cat_col + "#median" + num_col
+            grouped = df.groupby(cat_col)[num_col].median()
+            df[new_name] = df[cat_col].map(grouped)
+
+            new_name = cat_col + "#skew" + num_col
+            grouped = df.groupby(cat_col)[num_col].skew()
+            df[new_name] = df[cat_col].map(grouped)
+
+            new_name = cat_col + "#percentile_10" + num_col
+            grouped = df.groupby(cat_col)[num_col].agg(lambda x: np.percentile(x, 10))
+            df[new_name] = df[cat_col].map(grouped)
+
+            new_name = cat_col + "#percentile_50" + num_col
+            grouped = df.groupby(cat_col)[num_col].agg(lambda x: np.percentile(x, 50))
+            df[new_name] = df[cat_col].map(grouped)
+
+            new_name = cat_col + "#percentile_90" + num_col
+            grouped = df.groupby(cat_col)[num_col].agg(lambda x: np.percentile(x, 90))
+            df[new_name] = df[cat_col].map(grouped)
+    
+    return df
+
