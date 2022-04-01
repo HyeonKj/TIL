@@ -155,3 +155,32 @@ submission = pd.read_csv("../data/sample_submission.csv")
 train = train.drop('id', axis=1)
 test = test.drop('id', axis=1)
 
+train['Weight Ratio'] = train['Shucked Weight'] / train['Whole Weight']
+test['Weight Ratio'] = test['Shucked Weight'] / test['Whole Weight']
+
+train['Foreign Body'] = train['Whole Weight'] - (train['Shucked Weight'] + train['Viscra Weight'] + train['Shell Weight'])
+test['Foreign Body'] = test['Whole Weight'] - (test['Shucked Weight'] + test['Viscra Weight'] + test['Shell Weight'])
+train.loc[train[(train['Foreign Body']<0.0005)].index, "Foreign Body"] = 0.0005
+test.loc[test[(test['Foreign Body']<0.0005)].index, "Foreign Body"] = 0.0005
+
+train = train.replace(0.0, 0.01)
+test = test.replace(0.0, 0.01)
+
+cat_cols = []
+num_cols = []
+for col in train.columns:
+    if train[col].dtypes=='object':
+        cat_cols.append(col)
+    elif train[col].dtypes=='float64':
+        num_cols.append(col)
+
+
+feature_num_scaler(train, test)
+
+cat_cols = []
+num_cols = []
+for col in train.columns:
+    if train[col].dtypes=='object':
+        cat_cols.append(col)
+    elif train[col].dtypes=='float64':
+        num_cols.append(col)
