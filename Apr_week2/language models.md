@@ -79,5 +79,10 @@ ex. 밥을 먹었다. vs 밥을 마셨다.
 - 점점 작아져서 사라지거나 -- > 학습이 안됨
 - 점점 커져서 폭발하는 문자 -- > 학습이 불안정 
 
-![순환신경망](C:\Users\user\Desktop\화면 캡처 2022-04-05 145034.png)
+![순환신경망](https://t2.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/17Xk/image/CaG8aFbUMK9sF6ce-JQewa125sE.png)
 
+===========================================
+## 순환신경망과 주의 매커니즘 : LSTM의 한계
+
+- 순차적으로 계산되기 때문에 병렬처리가 어려움
+- 문장이 길러질수록 네트워크도 길어져서 학습시키기 어려움
