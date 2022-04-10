@@ -787,3 +787,14 @@ for i in range(3):
         y4 = y_nums[i]
 print(x4, y4)
 
+#15596 번 함수
+
+def solve(a):
+    return sum(a)
+
+def solve(a):
+    total = 0
+    for x in a:
+        total += x
+    return total
+
