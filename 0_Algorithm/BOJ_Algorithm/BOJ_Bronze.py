@@ -914,7 +914,7 @@ while True:
     else:
         print('neither')
 
-# 2740
+# 2740 분할정복 행렬곱셈. 
 N, M = map(int, input().split())
 A = []
 for _ in range(N):
@@ -940,9 +940,22 @@ for i in C:
         print(j, end = ' ')
     print()
 
-# 11050 이상계수 1
+# 11050 이상계수 1 분할론 
 from math import factorial
 n, k = map(int, input().split())
 b = factorial(n) // (factorial(k) * factorial(n - k))
 print(b)
 
+# 1008
+a = float(input())
+b = float(input())
+print(a/b)
+
+a,b = input().split()
+a = float(a)
+b = float(b)
+#print(a/b)
+print(round(a/b,9))
+
+a, b = map(int , input().split()) 
+print(a/b)
