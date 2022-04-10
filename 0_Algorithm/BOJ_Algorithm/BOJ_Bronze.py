@@ -926,7 +926,7 @@ for _ in range(M):
     B.append(list(map(int, input().split())))
 
 
-#행렬 곱셈
+#행렬 곱셈 
 C = [[0 for _ in range(K)] for _ in range(N)]
 
 for n in range(N):
@@ -939,4 +939,10 @@ for i in C:
     for j in i:
         print(j, end = ' ')
     print()
+
+# 11050 이상계수 1
+from math import factorial
+n, k = map(int, input().split())
+b = factorial(n) // (factorial(k) * factorial(n - k))
+print(b)
 
