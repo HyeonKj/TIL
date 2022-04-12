@@ -986,3 +986,12 @@ for _ in range(t):
 		else:
 			print(aa**bb%10)
 
+# 1075
+n = input()
+f = int(input())
+a = int(n[:-2] + '00')
+while True:
+    if a % f == 0:
+        break
+    a += 1
+print(str(a)[-2:])
