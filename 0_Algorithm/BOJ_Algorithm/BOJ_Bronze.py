@@ -1032,4 +1032,10 @@ while True:
         break
     n += 1
 
+# 1152
+print(len(input().splie()))
+
+word = input().split()
+print(len(word))
+
 # 
