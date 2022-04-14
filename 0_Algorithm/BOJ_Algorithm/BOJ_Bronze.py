@@ -1053,3 +1053,26 @@ else :
     max_index = cnt_list.index(max(cnt_list))  # count 숫자 최대값 인덱스(위치)
     print(unique_words[max_index])
 
+# 1159
+from collections import Counter
+n = int(input())
+player = []
+fn = []
+cnt = 0
+for i in range(n):
+    a = input()
+    player.append(a[0])
+player_count = Counter(player)
+for i, j in player_count.items():
+    if j >= 5:
+        fn.append(i)
+        cnt += 1
+fn.sort()
+if cnt == 0:
+    print("PREDAJA")
+else:
+    for i in fn:
+        print(i, end='')
+
+
+# 
