@@ -1109,4 +1109,7 @@ else :  # 사선 라인이 홀수번째 일 때
     under = line - gap  #분모
 print(f'{top}/{under}')
 
+# 1212
+print(bin(int(input(), 8)[2:])
+
 # 
