@@ -1110,6 +1110,11 @@ else :  # 사선 라인이 홀수번째 일 때
 print(f'{top}/{under}')
 
 # 1212
-print(bin(int(input(), 8)[2:])
+# print(bin(int(input(), 8)[2:])
 
-# 
+# 1225
+num1, num2 = input().split()
+num1, num2 = list(map(int, num1)), list(map(int, num2))
+
+print(sum(num1) * sum(num2))
+
