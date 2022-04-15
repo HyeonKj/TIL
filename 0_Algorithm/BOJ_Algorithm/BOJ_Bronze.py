@@ -1205,4 +1205,11 @@ elif y > m:
 else:
     print('Y M %d' % y)
 
+# 1271
+n, m =input().split()
+n = int(n)
+m = int(m)
+print(n//m)
+print(n&m)
+
 # 
