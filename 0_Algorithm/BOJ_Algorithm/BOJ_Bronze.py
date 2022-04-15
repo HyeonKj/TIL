@@ -1212,4 +1212,19 @@ m = int(m)
 print(n//m)
 print(n&m)
 
-# 
+# 1284
+while 1:
+    N = input()
+    if N == '0':
+        break
+    res = len(N)+1
+    for n in N:
+        if n == '0':
+            res += 4 
+        elif n == '1':
+            res += 2
+        else:
+            res += 3
+    print(res)
+
+#
