@@ -1248,3 +1248,21 @@ d, h, w = map(int, input().split())
 r = d / ((h ** 2 + w ** 2) ** 0.5)
 print(int(h * r), int(w * r))
 
+# 1333
+if __name__ == '__main__':
+    n, l, d = map(int, input().split())
+    check = [False] * (n * l + 5 * (n - 1))
+
+    for i in range(n):
+        s = (l + 5) * i
+        for j in range(s, s + l):
+            check[j] = True
+
+    answer = 0
+    while answer < len(check):
+        if not check[answer]:
+            break
+        answer += d
+    print(answer)
+
+#
