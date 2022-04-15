@@ -1118,3 +1118,12 @@ num1, num2 = list(map(int, num1)), list(map(int, num2))
 
 print(sum(num1) * sum(num2))
 
+#1233 주사위 
+s1, s2, s3 = map(int, input().split())
+li = [0]*81
+for i in range(1, s1+1):
+    for j in range(1, s2+1):
+        for k in range(1, s3+1):
+            li[i+j+k] += 1
+print(li.index(max(li)))
+
