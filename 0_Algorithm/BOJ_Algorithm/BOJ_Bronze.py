@@ -1190,3 +1190,19 @@ while 1:
             cnt += 1
     print(cnt)
 
+#1267 핸드폰 요금 
+n = int(input())
+s = list(map(int, input().split()))
+y = 0
+m = 0
+for i in s:
+    y += i // 30 * 10 + 10
+    m += i // 60 * 15 + 15
+if y < m:
+    print('Y %d' % y)
+elif y > m:
+    print('M %d' % m)
+else:
+    print('Y M %d' % y)
+
+# 
