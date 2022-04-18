@@ -1295,3 +1295,9 @@ for i in range(n_len - 1):
 if true == 0:
     print("NO")
 
+# 1357
+x, y = map(str, input().split())
+s = str(int(x[::-1]) + int(y[::-1]))
+print(int(s[::-1]))
+
+# 
