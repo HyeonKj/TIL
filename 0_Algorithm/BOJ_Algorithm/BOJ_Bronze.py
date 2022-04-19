@@ -1372,4 +1372,7 @@ for _ in range(Q):
             print(i+1)
             break
 
-
+#1402
+for _ in range(int(input())):
+    A, B = map(int, input().split())
+    print("yes")
