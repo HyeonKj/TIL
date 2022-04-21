@@ -1484,4 +1484,12 @@ print(cups[0])
 # 1550
 print(int(input(), 16))
 
+# 1551
+N, K = map(int, input().split())
+li = list(map(int, input().split(',')))
+for _ in range(K):
+    t = [li[i+1]-li[i] for i in range(len(li)-1)]
+    li = t
+print(*li, sep=',')
+
 # 
