@@ -1481,3 +1481,7 @@ for _ in range(N):
     
 print(cups[0])
 
+# 1550
+print(int(input(), 16))
+
+# 
