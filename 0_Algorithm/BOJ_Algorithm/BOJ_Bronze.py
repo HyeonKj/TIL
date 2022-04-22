@@ -1502,3 +1502,10 @@ while li[i] < M-1:
     i = (i+L)%N if li[i]%2 == 1 else (i-L)%N
 print(cnt)
 
+# 1598
+a, b = map(int, input().split())
+x1 = (a-1)//4 + 1 
+y1 = (a-1)%4
+x2 = (b-1)//4 + 1 
+y2 = (b-1)%4
+print(abs(x2-x1) + abs(y2-y1))
