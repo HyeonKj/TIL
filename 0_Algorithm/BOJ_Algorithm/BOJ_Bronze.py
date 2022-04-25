@@ -1623,3 +1623,15 @@ if B>=C:
     print(-1)
 else:
     print(int(A/(C-B)+1))
+
+# 1718
+text, key = input(), input()
+
+answer = ''
+
+for i in range(len(text)):
+    if text[i] == ' ': answer += ' '
+    else: answer += chr((ord(text[i]) - ord(key[i%len(key)]) - 1) % 26 + ord('a'))
+
+print(answer)
+
