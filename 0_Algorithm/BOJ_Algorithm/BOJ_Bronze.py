@@ -1648,3 +1648,17 @@ elif li[2]//li[1] == li[1]//li[0]:
 
 print(ans)
 
+# 1773 폭죽쇼
+N, C = map(int, input().split())
+check = [False]*(C+1)
+ans = 0
+
+for _ in range(N):
+    n = int(input())
+    for i in range(n, C+1, n):
+        if not check[i]:
+            check[i] = True
+            ans += 1
+print(ans)
+
+
