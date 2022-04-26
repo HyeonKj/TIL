@@ -31,3 +31,10 @@
 # # 두 번째 방법
 # sample = browser.find_element_by_css_select('a')
 # browser.execute_script("arguments[0].click();", sample)  #자바 명령어 실행
+'''
+첫 번째 방법은  해당 링크/명령어 위치에서  '\n' 을 입력하여  엔터를 입력하는 것과 동일한 효과를 가지게 하는 것이며, 
+
+두 번째 방법은 자바스크립트 명령어를 이용하여,  스크립트를 실행하라는 것이에요. 
+
+※ arguments 는 두 개의 파라미터를 가지게 되며  arguments[0] 가 해당 스크립트를 지정한다. 
+'''
