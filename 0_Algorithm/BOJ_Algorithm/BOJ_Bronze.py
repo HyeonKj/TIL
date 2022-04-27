@@ -1887,3 +1887,11 @@ else:
     print(sum(num))
     print(num[0])
 
+# 2010
+import sys
+
+n = int(input())
+s = 0
+for _ in range(n):
+    s += int(sys.stdin.readline())
+print(s-n+1)
