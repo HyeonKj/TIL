@@ -1699,3 +1699,45 @@ for n in prime:
         break
 print("GOOD" if good else f"BAD {bad}")
 
+# 1855
+import sys
+
+k = int(sys.stdin.readline().rstrip())
+str = sys.stdin.readline().rstrip()
+
+lst = []
+str1 = ''
+
+for i in range(int(len(str)/k)):
+    if i % 2 == 1:
+        str1 = str[i*k:i*k+k]
+        lst.append(str1[::-1])
+    else:
+        lst.append(str[i*k:i*k+k])
+
+
+for i in range(k):
+    for j in range(int(len(str)/k)):
+        print(lst[j][i], end="")
+
+# 1864
+d = {'-': 0, '\\': 1, '(': 2, '@': 3, '?': 4, '>': 5, '&': 6, '%': 7, '/': -1}
+while 1:
+    s = input()
+    if s == '#':
+        break
+    res = 0
+    for i in range(len(s)):
+        res += d[s[i]] * 8**(len(s)-i-1)
+    print(res)
+
+
+# 1871
+for _ in range(int(input())):
+    L, D = input().split('-')
+    n = int(D)
+    s = 0
+    for i in range(3):
+        s += (ord(L[i])-65) * 26**(2-i)
+    print("nice" if abs(s-n) <= 100 else "not nice")
+
