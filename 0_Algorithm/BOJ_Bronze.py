@@ -2007,3 +2007,8 @@ for i in discarded_card:
     print(i, end = ' ')
 print(card_list[0])
 
+# 2163
+N, M = map(int,input().split())
+
+print(N*M-1)
+
