@@ -67,3 +67,15 @@ def 함수이름(매개변수1, 매개변수2, 매개변수3, 매개변수4):
     return 매개변수1 + 매개변수2 + 매개변수3 + 매개변수4
 
 함수이름(1,2,3,4)
+
+'''
+import matplotlib.pyplot as plt
+
+plt.rc('font', family='Malgun Gothic)
+plt.bar(country, drate. color = 'red')
+plt.figure(figsize =(10,6))
+plt.title('covid 19 ')
+plt.ylabel('사망률')
+plt.grid()
+plt.show()
+'''
