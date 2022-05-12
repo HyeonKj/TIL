@@ -2026,3 +2026,15 @@ for _ in range(k):
     i, j, x, y = map(int, input().split())
     print(dp[x][y] - dp[x][j - 1] - dp[i - 1][y] + dp[i - 1][j - 1])
 
+#2204 도비의 난독증 테스트
+if __name__ == '__main__':
+    while True:
+        voca = []
+        n = int(input())
+        if n == 0:
+            quit()
+        for i in range(n):
+            voca.append(input())
+        voca.sort(key=str.lower)
+        print(voca[0])
+
