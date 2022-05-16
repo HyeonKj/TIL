@@ -10,3 +10,4 @@ axis = 1 삭제를 가로로할 것인지 세로로할 것인지에 따라서 0�
 axis = columns라고 쓸 수 있다. 
 p.s 자꾸 까먹지 말라. 
 '''
+# df.drop(['a'], axis=1, inplace = True)
