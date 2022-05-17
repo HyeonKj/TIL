@@ -11,3 +11,10 @@ axis = columns라고 쓸 수 있다.
 p.s 자꾸 까먹지 말라. 
 '''
 # df.drop(['a'], axis=1, inplace = True)
+# import folium
+'''
+라이브러리 
+사용법
+# branca 라이브러리 수정사항 반영 
+pip install git+https://github.com/python-visualization/branca.git@master
+ '''
