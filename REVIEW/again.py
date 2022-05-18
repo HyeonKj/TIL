@@ -17,4 +17,14 @@ p.s 자꾸 까먹지 말라.
 사용법
 # branca 라이브러리 수정사항 반영 
 pip install git+https://github.com/python-visualization/branca.git@master
+ 
+# 행 열 전환
+데이터프레임이름.transpose()
+데이터프레임이름(columns=데이터프레임이름.iloc[0],inplace=True)와
+데이터프레임이름=데이터프레임이름.drop(데이터프레임이름.index[0])를 해주면 행열 전환을 잘 마무리 할 수 있다.
+
+# 예시
+df = df.transpose()	#행 열 전환
+df.rename(columns=df.iloc[0], inplace=True)	# 행열이 전환된 데이터프레임의 열 이름 제대로 수정
+df = df.drop(df.index[0])
  '''
