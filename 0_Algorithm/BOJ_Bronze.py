@@ -2094,3 +2094,15 @@ n_min = min(a, b)
 n = n_max - n_min
 s = (n * (n + 1)) // 2
 print(s + (n_min * (n + 1)))
+
+# 2386
+while True :
+  n = input()
+  if n == '#' :
+    break
+  value = n[0]
+  data = n[2::]
+  result = data.count(value) + data.count(value.upper())
+  print(value, result)
+
+# 
