@@ -2105,4 +2105,7 @@ while True :
   result = data.count(value) + data.count(value.upper())
   print(value, result)
 
-# 
+# 2420
+N, M = map(int, input().split())
+print(abs(N-M))
+
