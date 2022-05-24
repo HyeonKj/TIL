@@ -2109,3 +2109,11 @@ while True :
 N, M = map(int, input().split())
 print(abs(N-M))
 
+# 2438
+inp = int(input())
+for i in range(1,(inp+1)):
+    print("*" * i)
+
+# 2439
+
+# 2440
