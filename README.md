@@ -49,7 +49,7 @@
 + A good friend can tell you what is the matter with you in a minute. He may not seem such a good friend after telling.
 + Procrastination is the thief of time.
 + “Done is better than perfect.”
-
++ A git hub that I suffer if I don't fill every day.
 
 
 
