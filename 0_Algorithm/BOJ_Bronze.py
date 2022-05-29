@@ -2117,3 +2117,19 @@ for i in range(1,(inp+1)):
 # 2439
 
 # 2440
+
+
+# 2938
+sugar = int(input())
+bags = 0
+
+while sugar >= 0:
+    if sugar % 5 == 0:		# 남은 설탕이 5로 나누어 떨어진다면
+        bags += sugar // 5	# 봉지 개수를 더하고 끝
+        print(bags)
+        break
+    sugar -= 3			# 아니라면 3kg짜리 봉지를 하나씩 더해본다
+    bags += 1
+else:
+    print(-1)			# 빼다가 총 설탕이 음수가 되면 -1
+#  
