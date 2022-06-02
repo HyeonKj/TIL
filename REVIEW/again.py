@@ -27,4 +27,20 @@ pip install git+https://github.com/python-visualization/branca.git@master
 df = df.transpose()	#행 열 전환
 df.rename(columns=df.iloc[0], inplace=True)	# 행열이 전환된 데이터프레임의 열 이름 제대로 수정
 df = df.drop(df.index[0])
+
+
+
+### 슬라이싱 
+city = 'seoul'
+print(city[-1])  # 결과 값: l
+print(city[-2])  # 결과 값: u
+print(city[-3])  # 결과 값: o
+print(city[-4])  # 결과 값: e
+print(city[-5])  # 결과 값: s
+
+객체 = [start:end:step]
+start : 객체에서 가져올 시작 인덱스(index)값입니다. start 인덱스(index)값부터 객체에 일부를 가져옵니다.
+end : end는 말 그대로 마지막 객체까지의 값을 가져올 인덱스(index)값입니다. 여기서 주의해야 될 점은 start는 start 인덱스(index) 값부터 시작이지만 end는 end 인덱스(index)값 전까지 객체를 가져옵니다.
+step: step은 step 인덱스(index) 만큼 건너뛰어서 객체 값을 가져옵니다. (생략할 경우 인덱스(index) 값은 1이 됩니다.
+
  '''
