@@ -43,4 +43,15 @@ start : 객체에서 가져올 시작 인덱스(index)값입니다. start 인덱
 end : end는 말 그대로 마지막 객체까지의 값을 가져올 인덱스(index)값입니다. 여기서 주의해야 될 점은 start는 start 인덱스(index) 값부터 시작이지만 end는 end 인덱스(index)값 전까지 객체를 가져옵니다.
 step: step은 step 인덱스(index) 만큼 건너뛰어서 객체 값을 가져옵니다. (생략할 경우 인덱스(index) 값은 1이 됩니다.
 
+code_name_last:
+nonetype = nothing_to_do
+what. am i doing for , at the moment get your feels
+every day is painful
+but , i know that this situation will be come.
+so whatever
+
+딕셔너리.get()
+dict.keys()
+dict.values()
+
  '''
