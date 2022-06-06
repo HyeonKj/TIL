@@ -54,4 +54,11 @@ so whatever
 dict.keys()
 dict.values()
 
+
+plotly 라이브러리 시각화가 예쁘게 잘 나온다, 
+import plotly.graph_objsasgo
+import plotly
+data=[ go.Bar( x=['x1', 'x2', 'x3', 'x4'], y=[11, 13, 17, 19] )] layout = plotly.graph_objs.Layout( title='Bar-chart') figure = plotly.graph_objs.Figure( data=data, layout=layout) plotly.offline.plot(figure, filename='basic_bar_chart.html')
+
+
  '''
