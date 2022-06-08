@@ -2120,7 +2120,9 @@ for i in range(1,a+1):
     print(" "*(a-i) + "*"*i)
 
 # 2440 star2
-
+a=int(input())
+for i in range(1,a+1):
+    print("*"*(a-i+1))
 
 # 2938
 sugar = int(input())
