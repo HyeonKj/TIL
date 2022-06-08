@@ -2114,9 +2114,12 @@ inp = int(input())
 for i in range(1,(inp+1)):
     print("*" * i)
 
-# 2439
+# 2439 star1
+a=int(input())
+for i in range(1,a+1):
+    print(" "*(a-i) + "*"*i)
 
-# 2440
+# 2440 star2
 
 
 # 2938
