@@ -2137,4 +2137,13 @@ while sugar >= 0:
     bags += 1
 else:
     print(-1)			# 빼다가 총 설탕이 음수가 되면 -1
-#  
+
+#  2935 소음 
+a = int(input())
+op = input()
+b = int(input())
+if op == '*':
+    print(a * b)
+else:
+    print(a + b)
+
