@@ -2153,4 +2153,10 @@ li = list(map(int, input().split()))
 for i in range(6):
     print(cp[i]-li[i], end=' ')
     
-# 
+# 3053 택시 기하학
+import math
+r = int(input())
+print(r*r*math.pi)
+print(2*r*r) # 택시기하학 원의 넓이
+
+# 3053- 2 
